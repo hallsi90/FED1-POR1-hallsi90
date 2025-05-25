@@ -1,0 +1,262 @@
+/* -------------------------------
+   Global Styles
+-------------------------------- */
+
+:root {
+  --border-radius: 12px;
+  --shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+  /* Colors */
+  --background-color: #f5f5f5;
+  --card-background-color: #fff;
+  --text-color: #333;
+  --accent-color: #006699;
+  --link-hover-color: #003d4d;
+  --header-p-color: #555;
+  --footer-color: #777;
+  --theme-button-hover-color: #004466;
+
+  /* Dark mode colors */
+  --dark-background: #1e1e1e;
+  --dark-text: #eee;
+  --dark-p: #ccc;
+  --dark-card-background: #333;
+  --dark-card-border: #444;
+  --dark-link: #66ccff;
+  --dark-link-hover: #9fdfff;
+  --dark-footer: #aaa;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Set base font size to 62.5% (10px) so 1rem = 10px */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 10px 20px;
+  font-family: "Inter", sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+/* -------------------------------
+   Header
+-------------------------------- */
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+header p {
+  font-size: 12px;
+  color: var(--header-p-color);
+}
+
+/* -------------------------------
+   Projects Section
+-------------------------------- */
+
+.projects h2 {
+  font-size: 14px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Project Cards */
+
+.project-card {
+  background-color: var(--card-background-color);
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  transition: transform 0.2s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.01);
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--border-radius);
+  margin-bottom: 10px;
+}
+
+.project-card h3 {
+  margin: 0 0 5px;
+  font-size: 12px;
+}
+
+.project-card p {
+  font-size: 10px;
+  margin-bottom: 8px;
+}
+
+/* Links */
+
+.project-links a {
+  display: inline-block;
+  margin-right: 10px;
+  text-decoration: none;
+  color: var(--accent-color);
+  font-weight: bold;
+  transition: color 0.2s ease;
+}
+
+.project-links a:hover {
+  color: var(--link-hover-color);
+}
+
+/* -------------------------------
+   Footer
+-------------------------------- */
+
+footer {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 9px;
+  color: var(--footer-color);
+}
+
+/* -------------------------------
+   Scroll to Top Button
+-------------------------------- */
+
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--accent-color);
+  color: #fff;
+  border: none;
+  padding: 7px 10px;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  display: none;
+  font-size: 12px;
+  z-index: 1000;
+}
+
+/* -------------------------------
+   Dark Mode Styles
+-------------------------------- */
+
+body,
+.project-card {
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+body.dark-mode {
+  background-color: var(--dark-background);
+  color: var(--dark-text);
+}
+
+body.dark-mode p {
+  color: var(--dark-p);
+}
+
+body.dark-mode .project-card {
+  background-color: var(--dark-card-background);
+  color: var(--dark-text);
+  border: 1px solid var(--dark-card-border);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+body.dark-mode a {
+  color: var(--dark-link);
+}
+
+body.dark-mode a:hover {
+  color: var(--dark-link-hover);
+}
+
+body.dark-mode footer {
+  color: var(--dark-footer);
+}
+
+/* Theme Control Buttons  */
+
+#themeControls {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+#resetThemeBtn {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+
+#resetThemeBtn.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+#themeControls button {
+  padding: 5px 10px;
+  background-color: var(--accent-color);
+  color: white;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  font-size: 10px;
+}
+
+#themeControls button:hover {
+  background-color: var(--theme-button-hover-color);
+}
+
+/* -------------------------------
+   Media Queries
+-------------------------------- */
+
+/* Tablet */
+
+@media (min-width: 768px) {
+  body {
+    padding: 20px 40px;
+  }
+
+  header h1 {
+    font-size: 22px;
+  }
+
+  .projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .projects h2 {
+    grid-column: 1 / -1; /* Span all columns and centers the heading */
+    margin-bottom: 0;
+    font-size: 16px;
+  }
+
+  .project-card {
+    margin-bottom: 0;
+  }
+}
+
+/* Desktop */
+
+@media (min-width: 1024px) {
+  .projects {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
