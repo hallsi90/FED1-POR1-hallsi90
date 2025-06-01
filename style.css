@@ -45,6 +45,12 @@ body {
   line-height: 1.6;
 }
 
+h1,
+h2 {
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
 /* -------------------------------
    Header
 -------------------------------- */
@@ -54,13 +60,13 @@ header {
   margin-bottom: 20px;
 }
 
-header h1 {
-  font-size: 18px;
+h1 {
+  font-size: 2.3rem;
   margin-bottom: 5px;
 }
 
 header p {
-  font-size: 12px;
+  font-size: 1.4rem;
   color: var(--header-p-color);
 }
 
@@ -69,9 +75,8 @@ header p {
 -------------------------------- */
 
 .projects h2 {
-  font-size: 14px;
+  font-size: 2rem;
   margin-bottom: 10px;
-  text-align: center;
 }
 
 /* Project Cards */
@@ -98,11 +103,11 @@ header p {
 
 .project-card h3 {
   margin: 0 0 5px;
-  font-size: 12px;
+  font-size: 1.6rem;
 }
 
 .project-card p {
-  font-size: 10px;
+  font-size: 1.4rem;
   margin-bottom: 8px;
 }
 
@@ -115,6 +120,7 @@ header p {
   color: var(--accent-color);
   font-weight: bold;
   transition: color 0.2s ease;
+  font-size: 1.4rem;
 }
 
 .project-links a:hover {
@@ -128,7 +134,7 @@ header p {
 footer {
   text-align: center;
   margin-top: 30px;
-  font-size: 9px;
+  font-size: 1rem;
   color: var(--footer-color);
 }
 
@@ -147,7 +153,7 @@ footer {
   border-radius: var(--border-radius);
   cursor: pointer;
   display: none;
-  font-size: 12px;
+  font-size: 1.2rem;
   z-index: 1000;
 }
 
@@ -232,8 +238,12 @@ body.dark-mode footer {
     padding: 20px 40px;
   }
 
-  header h1 {
-    font-size: 22px;
+  h1 {
+    font-size: 2.6rem;
+  }
+
+  header p {
+    font-size: 1.6rem;
   }
 
   .projects {
@@ -245,11 +255,19 @@ body.dark-mode footer {
   .projects h2 {
     grid-column: 1 / -1; /* Span all columns and centers the heading */
     margin-bottom: 0;
-    font-size: 16px;
+    font-size: 2.2rem;
   }
 
   .project-card {
     margin-bottom: 0;
+  }
+
+  .project-card h3 {
+    font-size: 1.8rem;
+  }
+
+  .project-card p {
+    font-size: 1.6rem;
   }
 }
 
@@ -258,5 +276,25 @@ body.dark-mode footer {
 @media (min-width: 1024px) {
   .projects {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  h1 {
+    font-size: 2.8rem;
+  }
+
+  header p {
+    font-size: 1.8rem;
+  }
+
+  .projects h2 {
+    font-size: 2.4rem;
+  }
+
+  .project-card h3 {
+    font-size: 2rem;
+  }
+
+  .project-card p {
+    font-size: 1.8rem;
   }
 }
