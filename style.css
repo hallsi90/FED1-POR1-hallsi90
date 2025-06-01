@@ -278,6 +278,10 @@ body.dark-mode footer {
   .project-card p {
     font-size: 1.6rem;
   }
+
+  footer {
+    font-size: 1.2rem;
+  }
 }
 
 /* Desktop */
