@@ -52,7 +52,7 @@ This is a static site – no installation is required
 
 ## 📄 Reflection Report
 
-You’ll find the full self-assessment and project reflections in the reflection.pdf file.
+You’ll find the full self-assessment and project reflections in the reflection-report.pdf file.
 
 It includes:
 
