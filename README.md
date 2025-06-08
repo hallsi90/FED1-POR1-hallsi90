@@ -66,7 +66,7 @@ It includes:
 
 ## ✅ Status
 
-- 🎓 Portfolio completed as part of the Portfolio 1 course assignment at Noroff
+- 🎓 Portfolio completed as part of the Portfolio 1 Course Assignment at Noroff
 - 📂 Includes updated and improved versions of all three projects
 - 🔗 All links (GitHub + live demos) are public and verified
 
@@ -88,6 +88,6 @@ This project was created for educational purposes as part of the Noroff Frontend
 
 🔗 Useful Links
 
-- [GitHub Repository – FED1-POR1](https://github.com/hallsi90/FED1-POR1-hallsi90)
+- [GitHub Repository](https://github.com/hallsi90/FED1-POR1-hallsi90)
 - [Live Portfolio Website](https://portfolio-1-hallsi90.netlify.app/)
 - [Reflection Report (PDF)](./reflection.pdf)
