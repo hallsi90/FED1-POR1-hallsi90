@@ -90,4 +90,4 @@ This project was created for educational purposes as part of the Noroff Frontend
 
 - [GitHub Repository](https://github.com/hallsi90/FED1-POR1-hallsi90)
 - [Live Portfolio Website](https://portfolio-1-hallsi90.netlify.app/)
-- [Reflection Report (PDF)](./reflection.pdf)
+- [Reflection Report (PDF)](./reflection-report.pdf)
